@@ -1,2 +1,2 @@
-# docker-logstash
-docker image for logstash
+# Logstash
+Logstash 1.4.2
