@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM testbunker/docker-debian
 RUN apt-get update && \
     apt-get install -y wget
 RUN wget https://download.elasticsearch.org/logstash/logstash/packages/debian/logstash_1.4.2-1-2c0f5a1_all.deb -O /tmp/logstash.deb && \
