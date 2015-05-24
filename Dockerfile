@@ -8,5 +8,5 @@ RUN wget https://download.elasticsearch.org/logstash/logstash/packages/debian/lo
     apt-get -f -y install && \
     rm -rf /tmp/logstash.deb /tmp/logstash-contrib.deb
 COPY logstash.sample.conf /etc/logstash.sample.conf
-ENTRYPOINT ["/opt/logstash/bin/logstash"]
+ENTRYPOINT ["/opt/logstash/bin/logstash", "-f", "/etc/logstash.sample.conf"]
 CMD []
